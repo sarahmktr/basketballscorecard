@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sarah's Counter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <span>
+            <div id="home">
+                <div class="board">
+                    <h3>HOME</h3>
+                </div>
+                <div class="score">
+                    <h3 id="hmscr">0</h3>
+                </div>
+                <div class="buttons">
+                    <button class="btn" onclick="hmadd1()">+1</button>
+                    <button class="btn" onclick="hmadd2()">+2</button>
+                    <button class="btn" onclick="hmadd3()">+3</button>
+                </div>
+            </div>
+
+            <div id="guest">
+                <div class="board">
+                    <h3>GUEST</h3>
+                </div>
+                <div class="score">
+                    <h3 id="gtscr">0</h3>
+                </div>
+                <div class="buttons">
+                    <button class="btn" onclick="gtadd1()">+1</button>
+                    <button class="btn" onclick="gtadd2()">+2</button>
+                    <button class="btn" onclick="gtadd3()">+3</button>
+                </div>
+            </div>
+        </span>
+
+        <span>
+            <div id="reset">
+                <button id="resetbtn" onclick="reset()">RESET</button>
+            </div>
+        </span>
+    </body>
+
+
+    
+</html>
+
+<!-- instead of grouping the same elements together
+i.e. scores together, headings together etc. 
+perhaps try grouping the individual units by home vs guest
+i.e. home: title, score, buttons
+    guest: title, score, buttons
+all 3 components grouped in their own home/guest div
+and then we display flex from there -->
